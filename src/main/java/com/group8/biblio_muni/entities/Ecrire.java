@@ -15,6 +15,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @ToString
 public class Ecrire {
     @Id
+    private String id;
     private String nombre_auteur;
     @DBRef
     private Auteur auteur;

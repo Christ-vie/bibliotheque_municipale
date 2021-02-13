@@ -22,4 +22,6 @@ public class RechMotCle {
     public String recher_motCle;
     @DBRef
     private MotCle motCle;
+    @DBRef
+    private Livre livre;
 }

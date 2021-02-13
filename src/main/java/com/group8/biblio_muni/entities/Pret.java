@@ -17,6 +17,7 @@ import java.util.Date;
 @ToString
 public class Pret {
     @Id
+    private String id;
     private Date date_de_pret;
     private Date date_de_retour;
     @DBRef

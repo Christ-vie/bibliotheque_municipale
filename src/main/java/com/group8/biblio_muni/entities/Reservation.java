@@ -10,12 +10,13 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
 @Data
-@AllArgsConstructor @NoArgsConstructor
+@NoArgsConstructor
+@AllArgsConstructor
 @ToString
 public class Reservation {
     @Id
     private String id;
-    private String num_reservation;
+    private String numero;
     @DBRef
     private Livre livre;
     @DBRef

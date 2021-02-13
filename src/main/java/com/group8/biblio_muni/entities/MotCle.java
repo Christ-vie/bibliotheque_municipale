@@ -18,9 +18,8 @@ import java.util.Collection;
 @ToString
 public class MotCle {
     @Id
+    private String id;
     private String par_mot;
     @DBRef
     private Collection<RechMotCle> rechMotCles=new ArrayList<>();
-    @DBRef
-    private Collection<Livre> livres=new ArrayList<>();
 }
